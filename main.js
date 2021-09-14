@@ -57,7 +57,7 @@ function draw() {
         X = mouseX - 500;
       }
       if (mouseY > windowHeight / 2) {
-        Y = mouseY - 500;
+        Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
       fill(0, 0, 0);
