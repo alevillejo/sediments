@@ -1,18 +1,64 @@
 let canvas, img, seed, world, extracanvas;
-let mySound;
+
 let env;
 // p5.disableFriendlyErrors = true;
 // const windowWidth = 1200;
 // 	const windowHeight = 600;\
 
-let t1 = 0.1; // attack time in seconds
-let l1 = 0.7; // attack level 0.0 to 1.0
-let t2 = 0.3; // decay time in seconds
-let l2 = 0.1; // decay level  0.0 to 1.0
+let VWC;
+let DSS;
+let JBI;
+let STE;
+let BAM;
+let IML;
+let AMW;
+let KUT;
+let KPN;
+let NYN;
+let EJC;
+
 
 // let input_val = createInput('');
 let encendido;
-let text1 = ('Geometric Organism Sediment Can you sing with all the voices of the mountains? You can paint with all the colors of the wind!Geometric mutations are merging with unintended landscapes creating syntheses of existences beyond understanding. This sediment shows authenticity as mutations of sound.');
+let text1 = (`Geometric Organism Sediment
+‘Can you sing with all the voices of the mountains? You can paint with all the colors of the wind!’
+Geometric mutations are merging with unintended landscapes creating syntheses of existences beyond understanding. This sediment shows authenticity as mutations of sound.
+`);
+let text2 = (`Hallucinatory Specism Layer
+’This bright millennium, On it's way, Let it come, Someday’
+Emotional vertical fault lines indicate civilizational redirections. Fear. Treachery. Bloodlust! Wholistic ‘natural’ differences signify constructivist hallucinations.
+`);
+let text3 = (`Machine Flora & Fauna Sediment
+’You'll see it's true’
+Fusing non-organic logic & synthetic rainbow spectra creating radically pragmatic transhumanist visions: Imagine the unimaginable by seeing the invisible where uncanny scenarios grow flora/fauna/silicon compounds into quantum permafrost.`);
+let text4 = (`Networked Organisms Layer
+‘I won't give up, no, I won't give in till I reach the end, and then I'll start again’
+Post-evolutionary multispecies histories & posthumanist narratives fusing GMO’s into new micro &/or macro superstructures.
+`);
+let text5 = (`Non-anthropocentric Sediment
+‘There is no home like the one you’ve got, cause that home belongs to you’ 
+Parts of an ecosystem too slow to adapt to the evolutionary speed & it is not the planet changing fast (climate, extinction..) but humans lack behavioral adaptation speed. `);
+let text6 = (`Non-Endemic Alien Fusion Layer
+‘The cold never bothered me anyway!’
+We praise endemic compression, energy for digital plants, geoinsects, hybrid creatures. Organic life on earth proposes utopian future tech taxonomies: Network Infrstrctre, artfcl Satellites, ML/AI, IoT, Dizzney fusing with extraterrestrial ‘artefacts’.`);
+let text7 = (`Highly Vulnerable Bacint Sediment
+‘Destined to seek, destined to know’
+Bacteria Intelligence create prototypical multitudes, utopian eternities & hotspots. Bacflora changes genetic makeups, environmental factors & bioinsecticide strains intersect with informational markers through diverse sediments.
+`);
+let text8 = (`Non-binary Trans-Pollination Layer
+‘Que se podría hacer el amor por telepatía, Si te tuviera de frente la mente te la volaría’
+Mutations & unintended non-binary artificial landscapes use software for intervarietal transpollination while productivity perceives ultra-rapid cycles: such high-activity layeres flourish & disappear within miliseconds, creating molecular stability.`);
+let text9 = (`The Impossible Possibility Sediment
+  ’Two years, and just like that, my head still takes me back, thought it was done, but I guess it's never really over’
+  Contradictory anarchism breaks random fusion of non-organic logic and synthetic color spectra, primitively utilitarian: Imagine the unimaginable; refuse interpretation.
+  `);
+let text10 = (`Physics & Compression Layer
+’You're the best thing I never knew I needed’
+A layer interacting above 0,5% & beyond physical logic, taking extreme decisions while theories evolves & verified physics changes & displays agency through compression, the meaty eye of the needle.`);
+let text11 = (`‘Homo Fusus’ hopepunksynesthesia Sediment
+‘In the circle of life it's the wheel of fortune, it's the leap of faith, it's the band of hope’
+Homo oeconomicus is an invention of calvinistic Incels since humans can individually adapt to any scenario, & humanity as a whole can blend senses, fuse & unite.`);
+
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -24,12 +70,25 @@ function setup() {
   seed = random(1200);
   world = generateWorld(randomInt());
   extracanvas = createGraphics(windowWidth, windowHeight);
-  img = loadImage('assets/11.png'); // Load the image
+  img = loadImage('assets/12.png'); // Load the image
   encendido = true;
 }
 
 function preload() {
-  mySound = loadSound('assets/177.mp3');
+  VWC = loadSound('assets/177.mp3');
+  DSS = loadSound('assets/DSS.mp3');
+  JBI = loadSound('assets/JBI.mp3');
+  STE = loadSound('assets/STE.mp3');
+  BAM = loadSound('assets/BAM.mp3');
+  IML = loadSound('assets/IML.mp3');
+  AMW = loadSound('assets/AMW.mp3');
+  KUT = loadSound('assets/KUT.mp3');
+  KPN = loadSound('assets/KPN.mp3');
+  NYN = loadSound('assets/NYN.mp3');
+  EJC = loadSound('assets/EJC.mp3');
+
+
+
 }
 
 function on() {
@@ -52,7 +111,10 @@ function draw() {
   let Y = mouseY;
 
   if (!encendido) {
-    if (hueValue >= 1 && hueValue < 71) {
+
+    //1
+
+    if (hueValue >= 1 && hueValue < 30) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -60,38 +122,272 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(0, 0, 0);
-      // rect(mouseX, mouseY, 500, 500);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
       textSize(20);
       fill(0);
       text(text1, X, Y, 500, 500);
 
-      mySound.setVolume(0.3, 1);
-      mySound.play();
+      VWC.setVolume(0.3, 1);
+      VWC.play();
 
 
     } else {
-      mySound.setVolume(0, 1);
-      // mySound.stop();
-
-    }
-    // mySound.setSpeed(map(mouseX, 0, width, 0, 1));
-    if (hueValue <= 71 && hueValue >= 100) {
-      fill(0);
-      textSize(20);
-      fill(0);
-      text(text1, mouseX, mouseY);
+      VWC.setVolume(0, 1);
     }
 
-    if (hueValue < 100 && hueValue > 300) {
-      fill(0);
-      // rect(mouseX, mouseY, 200, 550);
+    //2
+
+    if (hueValue >= 31 && hueValue < 60) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
       textSize(20);
       fill(0);
-      text('Era: 2000 millon - other info goes here', mouseX, mouseY);
+      text(text2, X, Y, 500, 500);
+
+      DSS.setVolume(0.3, 1);
+      DSS.play();
+    } else {
+      DSS.setVolume(0, 1);
     }
+
+    //3
+
+    if (hueValue >= 61 && hueValue < 90) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text3, X, Y, 500, 500);
+
+      JBI.setVolume(0.3, 1);
+      JBI.play();
+    } else {
+      JBI.setVolume(0, 1);
+    }
+
+    //4
+
+    if (hueValue >= 61 && hueValue < 90) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text4, X, Y, 500, 500);
+
+      STE.setVolume(0.3, 1);
+      STE.play();
+    } else {
+      STE.setVolume(0, 1);
+    }
+
+    //5
+
+    if (hueValue >= 91 && hueValue < 120) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text5, X, Y, 500, 500);
+
+      BAM.setVolume(0.3, 1);
+      BAM.play();
+    } else {
+      BAM.setVolume(0, 1);
+    }
+
+    //6
+
+    if (hueValue >= 121 && hueValue < 150) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text6, X, Y, 500, 500);
+
+      IML.setVolume(0.3, 1);
+      IML.play();
+    } else {
+      IML.setVolume(0, 1);
+    }
+
+    //7
+
+    if (hueValue >= 151 && hueValue < 180) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text7, X, Y, 500, 500);
+
+      AMW.setVolume(0.3, 1);
+      AMW.play();
+    } else {
+      AMW.setVolume(0, 1);
+    }
+
+    //8
+
+
+    if (hueValue >= 181 && hueValue < 210) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text8, X, Y, 500, 500);
+
+      KUT.setVolume(0.3, 1);
+      KUT.play();
+    } else {
+      KUT.setVolume(0, 1);
+    }
+
+    //9
+
+    if (hueValue >= 211 && hueValue < 230) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text9, X, Y, 500, 500);
+
+      KPN.setVolume(0.3, 1);
+      KPN.play();
+    } else {
+      KPN.setVolume(0, 1);
+    }
+
+    //10
+
+    if (hueValue >= 231 && hueValue < 260) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text10, X, Y, 500, 500);
+
+      NYN.setVolume(0.3, 1);
+      NYN.play();
+    } else {
+      NYN.setVolume(0, 1);
+    }
+
+    //11
+
+    if (hueValue >= 261 && hueValue < 290) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text11, X, Y, 500, 500);
+
+      NYN.setVolume(0.3, 1);
+      NYN.play();
+    } else {
+      NYN.setVolume(0, 1);
+    }
+
+    if (hueValue >= 291 && hueValue < 330) {
+      if (mouseX > windowWidth / 2) {
+        X = mouseX - 500;
+      }
+      if (mouseY > windowHeight / 2) {
+        Y = mouseY - 150;
+      }
+      // let bbox = textBounds(text1, mouseX, mouseY, 12);
+      fill(117, 178, 168);
+      rect(X - 10, Y - 10, 500, 180);
+      textSize(20);
+      fill(0);
+      text(text12, X, Y, 500, 500);
+
+      EJC.setVolume(0.3, 1);
+      EJC.play();
+    } else {
+      EJC.setVolume(0, 1);
+    }
+
+
   }
-  print(Y);
+
+
+
+
+
+
+
+
+  print(hueValue);
   // image(extracanvas, 0, 0, windowWidth, windowHeight);
 
   // if (frameCount === 15) {
@@ -124,7 +420,7 @@ function draw() {
 
 
   // deltaTime = 0;
-  // mySound.play();
+  // VWC.play();
   // filter(BLUR, 3);
 
 
@@ -262,7 +558,7 @@ function drawWorld(world) {
         col = [0, 0, 123, 0];
       } else {
         rSet(world[x + y * windowWidth])
-        col = [random(0, 255), random(0, 255), random(0, 255), 255]
+        col = [random(map(y, 0, worldHeight, 0, 255)), random(0, 100), random(0, 25), 255]
         // col = [random(map(y, 0, windowHeight, 0, 255)), random(0, 100), random(0, 25), 255]
       }
       img.pixels[(x + y * windowWidth) * 4] = floor(col[0]);
