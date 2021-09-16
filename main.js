@@ -86,6 +86,7 @@ function setup() {
   encendido = true;
 
 
+
 }
 
 function preload() {
@@ -119,6 +120,7 @@ function off() {
 function draw() {
   background(255);
   image(img, 0, 0, img.width, img.height);
+
   // for (x = 0; x <= 3; x++) {
   //   img.filter(BLUR, x);
   //   print(x);
@@ -132,13 +134,14 @@ function draw() {
   let X = mouseX;
   let Y = mouseY;
 
+
   if (!encendido) {
     // img.filter(BLUR);
     // img.filter(BLUR, 0);
 
     //1
 
-    if (hueValue >= 1 && hueValue <= 30) {
+    if (hueValue >= 1 && hueValue <= 30 && mousePressed) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -153,10 +156,10 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text1, X, Y, 500, 500);
-
-      VWC.setVolume(0.3, 1);
-      VWC.play();
-
+      if (!VWC.isPlaying()) {
+        VWC.setVolume(0.3, 1);
+        VWC.play();
+      }
 
     } else {
       VWC.setVolume(0, 1);
@@ -179,9 +182,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text2, X, Y, 500, 500);
+      if (!DSS.isPlaying()) {
+        DSS.setVolume(0.3, 1);
+        DSS.play();
+      }
 
-      DSS.setVolume(0.3, 1);
-      DSS.play();
     } else {
       DSS.setVolume(0, 1);
     }
@@ -203,9 +208,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text3, X, Y, 500, 500);
+      if (!JBI.isPlaying()) {
+        JBI.setVolume(0.3, 1);
+        JBI.play();
+      }
 
-      JBI.setVolume(0.3, 1);
-      JBI.play();
     } else {
       JBI.setVolume(0, 1);
     }
@@ -227,9 +234,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text4, X, Y, 500, 500);
+      if (!STE.isPlaying()) {
+        STE.setVolume(0.3, 1);
+        STE.play();
+      }
 
-      STE.setVolume(0.3, 1);
-      STE.play();
     } else {
       STE.setVolume(0, 1);
     }
@@ -251,9 +260,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text5, X, Y, 500, 500);
+      if (!BAM.isPlaying()) {
+        BAM.setVolume(0.3, 1);
+        BAM.play();
+      }
 
-      BAM.setVolume(0.3, 1);
-      BAM.play();
     } else {
       BAM.setVolume(0, 1);
     }
@@ -275,9 +286,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text6, X, Y, 500, 500);
+      if (!IML.isPlaying()) {
+        IML.setVolume(0.3, 1);
+        IML.play();
+      }
 
-      IML.setVolume(0.3, 1);
-      IML.play();
     } else {
       IML.setVolume(0, 1);
     }
@@ -299,9 +312,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text7, X, Y, 500, 500);
+      if (!AMW.isPlaying()) {
+        AMW.setVolume(0.3, 1);
+        AMW.play();
+      }
 
-      AMW.setVolume(0.3, 1);
-      AMW.play();
     } else {
       AMW.setVolume(0, 1);
     }
@@ -324,9 +339,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text8, X, Y, 500, 500);
+      if (!KUT.isPlaying()) {
+        KUT.setVolume(0.3, 1);
+        KUT.play();
+      }
 
-      KUT.setVolume(0.3, 1);
-      KUT.play();
     } else {
       KUT.setVolume(0, 1);
     }
@@ -348,9 +365,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text9, X, Y, 500, 500);
+      if (!KPN.isPlaying()) {
+        KPN.setVolume(0.3, 1);
+        KPN.play();
+      }
 
-      KPN.setVolume(0.3, 1);
-      KPN.play();
     } else {
       KPN.setVolume(0, 1);
     }
@@ -372,9 +391,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text10, X, Y, 500, 500);
+      if (!NYN.isPlaying()) {
+        NYN.setVolume(0.3, 1);
+        NYN.play();
+      }
 
-      NYN.setVolume(0.3, 1);
-      NYN.play();
     } else {
       NYN.setVolume(0, 1);
     }
@@ -396,9 +417,11 @@ function draw() {
       fill(0);
       textFont(myFont);
       text(text11, X, Y, 500, 500);
+      if (!EJC.isPlaying()) {
+        EJC.setVolume(0.3, 1);
+        EJC.play();
+      }
 
-      EJC.setVolume(0.3, 1);
-      EJC.play();
     } else {
       EJC.setVolume(0, 1);
     }
