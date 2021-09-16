@@ -138,7 +138,7 @@ function draw() {
 
     //1
 
-    if (hueValue >= 1 && hueValue < 30) {
+    if (hueValue >= 1 && hueValue <= 30) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -164,7 +164,7 @@ function draw() {
 
     //2
 
-    if (hueValue >= 31 && hueValue < 60) {
+    if (hueValue >= 31 && hueValue <= 60) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -188,7 +188,7 @@ function draw() {
 
     //3
 
-    if (hueValue >= 61 && hueValue < 90) {
+    if (hueValue >= 61 && hueValue <= 90) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -212,7 +212,7 @@ function draw() {
 
     //4
 
-    if (hueValue >= 91 && hueValue < 120) {
+    if (hueValue >= 91 && hueValue <= 120) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -236,7 +236,7 @@ function draw() {
 
     //5
 
-    if (hueValue >= 121 && hueValue < 150) {
+    if (hueValue >= 121 && hueValue <= 150) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -260,7 +260,7 @@ function draw() {
 
     //6
 
-    if (hueValue >= 151 && hueValue < 180) {
+    if (hueValue >= 151 && hueValue <= 180) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -284,7 +284,7 @@ function draw() {
 
     //7
 
-    if (hueValue >= 181 && hueValue < 210) {
+    if (hueValue >= 181 && hueValue <= 210) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -309,7 +309,7 @@ function draw() {
     //8
 
 
-    if (hueValue >= 211 && hueValue < 240) {
+    if (hueValue >= 211 && hueValue <= 240) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -333,7 +333,7 @@ function draw() {
 
     //9
 
-    if (hueValue >= 241 && hueValue < 270) {
+    if (hueValue >= 241 && hueValue <= 270) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -357,7 +357,7 @@ function draw() {
 
     //10
 
-    if (hueValue >= 271 && hueValue < 300) {
+    if (hueValue >= 271 && hueValue <= 300) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -381,7 +381,7 @@ function draw() {
 
     //11
 
-    if (hueValue >= 301 && hueValue < 330) {
+    if (hueValue >= 301 && hueValue <= 360) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -413,7 +413,7 @@ function draw() {
 
 
 
-  // print(hueValue);
+  print(hueValue);
   // image(extracanvas, 0, 0, windowWidth, windowHeight);
 
   // if (frameCount === 15) {
