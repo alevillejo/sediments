@@ -21,41 +21,52 @@ let EJC;
 // let input_val = createInput('');
 let encendido;
 let text1 = (`Geometric Organism Sediment
+
 ‘Can you sing with all the voices of the mountains? You can paint with all the colors of the wind!’
 Geometric mutations are merging with unintended landscapes creating syntheses of existences beyond understanding. This sediment shows authenticity as mutations of sound.
 `);
 let text2 = (`Hallucinatory Specism Layer
+
 ’This bright millennium, On it's way, Let it come, Someday’
 Emotional vertical fault lines indicate civilizational redirections. Fear. Treachery. Bloodlust! Wholistic ‘natural’ differences signify constructivist hallucinations.
 `);
 let text3 = (`Machine Flora & Fauna Sediment
+
 ’You'll see it's true’
 Fusing non-organic logic & synthetic rainbow spectra creating radically pragmatic transhumanist visions: Imagine the unimaginable by seeing the invisible where uncanny scenarios grow flora/fauna/silicon compounds into quantum permafrost.`);
 let text4 = (`Networked Organisms Layer
+
 ‘I won't give up, no, I won't give in till I reach the end, and then I'll start again’
 Post-evolutionary multispecies histories & posthumanist narratives fusing GMO’s into new micro &/or macro superstructures.
 `);
 let text5 = (`Non-anthropocentric Sediment
+
 ‘There is no home like the one you’ve got, cause that home belongs to you’ 
 Parts of an ecosystem too slow to adapt to the evolutionary speed & it is not the planet changing fast (climate, extinction..) but humans lack behavioral adaptation speed. `);
 let text6 = (`Non-Endemic Alien Fusion Layer
+
 ‘The cold never bothered me anyway!’
 We praise endemic compression, energy for digital plants, geoinsects, hybrid creatures. Organic life on earth proposes utopian future tech taxonomies: Network Infrstrctre, artfcl Satellites, ML/AI, IoT, Dizzney fusing with extraterrestrial ‘artefacts’.`);
 let text7 = (`Highly Vulnerable Bacint Sediment
+
 ‘Destined to seek, destined to know’
 Bacteria Intelligence create prototypical multitudes, utopian eternities & hotspots. Bacflora changes genetic makeups, environmental factors & bioinsecticide strains intersect with informational markers through diverse sediments.
 `);
 let text8 = (`Non-binary Trans-Pollination Layer
+
 ‘Que se podría hacer el amor por telepatía, Si te tuviera de frente la mente te la volaría’
 Mutations & unintended non-binary artificial landscapes use software for intervarietal transpollination while productivity perceives ultra-rapid cycles: such high-activity layeres flourish & disappear within miliseconds, creating molecular stability.`);
 let text9 = (`The Impossible Possibility Sediment
+
   ’Two years, and just like that, my head still takes me back, thought it was done, but I guess it's never really over’
   Contradictory anarchism breaks random fusion of non-organic logic and synthetic color spectra, primitively utilitarian: Imagine the unimaginable; refuse interpretation.
   `);
 let text10 = (`Physics & Compression Layer
+
 ’You're the best thing I never knew I needed’
 A layer interacting above 0,5% & beyond physical logic, taking extreme decisions while theories evolves & verified physics changes & displays agency through compression, the meaty eye of the needle.`);
 let text11 = (`‘Homo Fusus’ hopepunksynesthesia Sediment
+
 ‘In the circle of life it's the wheel of fortune, it's the leap of faith, it's the band of hope’
 Homo oeconomicus is an invention of calvinistic Incels since humans can individually adapt to any scenario, & humanity as a whole can blend senses, fuse & unite.`);
 
@@ -71,10 +82,15 @@ function setup() {
   world = generateWorld(randomInt());
   extracanvas = createGraphics(windowWidth, windowHeight);
   img = loadImage('assets/12.png'); // Load the image
+  // img1 = loadImage('assets/12.png'); // Load the image
   encendido = true;
+
+
 }
 
 function preload() {
+
+  myFont = loadFont('font/ArtifaktElementRegular.ttf');
   VWC = loadSound('assets/177.mp3');
   DSS = loadSound('assets/DSS.mp3');
   JBI = loadSound('assets/JBI.mp3');
@@ -103,6 +119,12 @@ function off() {
 function draw() {
   background(255);
   image(img, 0, 0, img.width, img.height);
+  // for (x = 0; x <= 3; x++) {
+  //   img.filter(BLUR, x);
+  //   print(x);
+  // }
+
+
   let c = get(mouseX, mouseY);
   let hueValue = floor(hue(c));
   let saturationValue = saturation(c);
@@ -111,6 +133,8 @@ function draw() {
   let Y = mouseY;
 
   if (!encendido) {
+    // img.filter(BLUR);
+    // img.filter(BLUR, 0);
 
     //1
 
@@ -122,10 +146,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 510, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text1, X, Y, 500, 500);
 
       VWC.setVolume(0.3, 1);
@@ -146,10 +172,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text2, X, Y, 500, 500);
 
       DSS.setVolume(0.3, 1);
@@ -168,10 +196,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text3, X, Y, 500, 500);
 
       JBI.setVolume(0.3, 1);
@@ -182,7 +212,7 @@ function draw() {
 
     //4
 
-    if (hueValue >= 61 && hueValue < 90) {
+    if (hueValue >= 91 && hueValue < 120) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -190,10 +220,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text4, X, Y, 500, 500);
 
       STE.setVolume(0.3, 1);
@@ -204,7 +236,7 @@ function draw() {
 
     //5
 
-    if (hueValue >= 91 && hueValue < 120) {
+    if (hueValue >= 121 && hueValue < 150) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -212,10 +244,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text5, X, Y, 500, 500);
 
       BAM.setVolume(0.3, 1);
@@ -226,7 +260,7 @@ function draw() {
 
     //6
 
-    if (hueValue >= 121 && hueValue < 150) {
+    if (hueValue >= 151 && hueValue < 180) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -234,10 +268,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text6, X, Y, 500, 500);
 
       IML.setVolume(0.3, 1);
@@ -248,7 +284,7 @@ function draw() {
 
     //7
 
-    if (hueValue >= 151 && hueValue < 180) {
+    if (hueValue >= 181 && hueValue < 210) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -256,10 +292,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text7, X, Y, 500, 500);
 
       AMW.setVolume(0.3, 1);
@@ -271,7 +309,7 @@ function draw() {
     //8
 
 
-    if (hueValue >= 181 && hueValue < 210) {
+    if (hueValue >= 211 && hueValue < 240) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -279,10 +317,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text8, X, Y, 500, 500);
 
       KUT.setVolume(0.3, 1);
@@ -293,7 +333,7 @@ function draw() {
 
     //9
 
-    if (hueValue >= 211 && hueValue < 230) {
+    if (hueValue >= 241 && hueValue < 270) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -301,10 +341,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text9, X, Y, 500, 500);
 
       KPN.setVolume(0.3, 1);
@@ -315,7 +357,7 @@ function draw() {
 
     //10
 
-    if (hueValue >= 231 && hueValue < 260) {
+    if (hueValue >= 271 && hueValue < 300) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -323,10 +365,12 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text10, X, Y, 500, 500);
 
       NYN.setVolume(0.3, 1);
@@ -337,7 +381,7 @@ function draw() {
 
     //11
 
-    if (hueValue >= 261 && hueValue < 290) {
+    if (hueValue >= 301 && hueValue < 330) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -345,31 +389,13 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
+      noStroke();
+      fill('rgba(117, 178, 168, 0.5)');
+      rect(X - 10, Y - 10, 500, 230);
       textSize(20);
       fill(0);
+      textFont(myFont);
       text(text11, X, Y, 500, 500);
-
-      NYN.setVolume(0.3, 1);
-      NYN.play();
-    } else {
-      NYN.setVolume(0, 1);
-    }
-
-    if (hueValue >= 291 && hueValue < 330) {
-      if (mouseX > windowWidth / 2) {
-        X = mouseX - 500;
-      }
-      if (mouseY > windowHeight / 2) {
-        Y = mouseY - 150;
-      }
-      // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      fill(117, 178, 168);
-      rect(X - 10, Y - 10, 500, 180);
-      textSize(20);
-      fill(0);
-      text(text12, X, Y, 500, 500);
 
       EJC.setVolume(0.3, 1);
       EJC.play();
@@ -387,7 +413,7 @@ function draw() {
 
 
 
-  print(hueValue);
+  // print(hueValue);
   // image(extracanvas, 0, 0, windowWidth, windowHeight);
 
   // if (frameCount === 15) {
