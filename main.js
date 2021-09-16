@@ -81,9 +81,18 @@ function setup() {
   seed = random(1200);
   world = generateWorld(randomInt());
   extracanvas = createGraphics(windowWidth, windowHeight);
-  img = loadImage('assets/12.png'); // Load the image
+  img = loadImage('assets/blur.png'); // Load the image
+  // img1 = loadImage('assets/1.png'); // Load the image
+  // img2 = loadImage('assets/2.png'); // Load the image
+  // img3 = loadImage('assets/3.png'); // Load the image
+  // img4 = loadImage('assets/4.png'); // Load the image
+  // img5 = loadImage('assets/5.png'); // Load the image
+  // img6 = loadImage('assets/6.png'); // Load the image
+  // img7 = loadImage('assets/12.png'); // Load the image
+  randoImgArray = [loadImage('assets/1.png'), loadImage('assets/2.png'), loadImage('assets/3.png'), loadImage('assets/4.png'), loadImage('assets/5.png'), loadImage('assets/6.png'), loadImage('assets/12.png')];
   // img1 = loadImage('assets/12.png'); // Load the image
   encendido = true;
+  randoImg = random(randoImgArray);
 
 
 
@@ -136,6 +145,7 @@ function draw() {
 
 
   if (!encendido) {
+    image(randoImg, 0, 0, img.width, img.height);
     // img.filter(BLUR);
     // img.filter(BLUR, 0);
 
@@ -163,6 +173,7 @@ function draw() {
 
     } else {
       VWC.setVolume(0, 1);
+      VWC.stop();
     }
 
     //2
@@ -189,6 +200,7 @@ function draw() {
 
     } else {
       DSS.setVolume(0, 1);
+      DSS.stop();
     }
 
     //3
@@ -215,6 +227,7 @@ function draw() {
 
     } else {
       JBI.setVolume(0, 1);
+      JBI.stop();
     }
 
     //4
@@ -241,6 +254,7 @@ function draw() {
 
     } else {
       STE.setVolume(0, 1);
+      STE.stop();
     }
 
     //5
@@ -267,6 +281,7 @@ function draw() {
 
     } else {
       BAM.setVolume(0, 1);
+      BAM.stop();
     }
 
     //6
@@ -293,6 +308,7 @@ function draw() {
 
     } else {
       IML.setVolume(0, 1);
+      IML.stop();
     }
 
     //7
@@ -319,6 +335,7 @@ function draw() {
 
     } else {
       AMW.setVolume(0, 1);
+      AMW.stop();
     }
 
     //8
@@ -346,6 +363,7 @@ function draw() {
 
     } else {
       KUT.setVolume(0, 1);
+      KUT.stop();
     }
 
     //9
@@ -372,6 +390,7 @@ function draw() {
 
     } else {
       KPN.setVolume(0, 1);
+      KPN.stop();
     }
 
     //10
@@ -398,6 +417,7 @@ function draw() {
 
     } else {
       NYN.setVolume(0, 1);
+      NYN.stop();
     }
 
     //11
@@ -424,6 +444,7 @@ function draw() {
 
     } else {
       EJC.setVolume(0, 1);
+      EJC.stop();
     }
 
 
