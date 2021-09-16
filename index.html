@@ -24,13 +24,33 @@
       left: 50%;
       font-size: 24px;
       font-family: Atrifakt;
-      color: white;
-      transform: translate(-50%,-50%);
+      color: rgb(233, 199, 6);
+      transform: translate(-75%,-50%);
       -ms-transform: translate(-50%,-50%);
     }
 
+    #h1{
+      font-size: 90px;
+    }
+
+    #p1{
+      transform: translate(0%,-50%);
+      font-size: 30px;
+    }
+
+    #p2{
+      transform: translate(0%,-50%);
+      color: rgb(233, 59, 6);
+      font-size: 20px;
+    }
+    #p3{
+      transform: translate(50%,-50%);
+      color: rgb(233, 199, 6);
+      font-size: 20px;
+    }
+
     #cell{
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0);
     }
 
     #sub-button{
@@ -45,15 +65,18 @@
     <script src="main.js" type="text/javascript"></script><script src="math.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" type="text/javascript"></script><script src="p5.dom.min.js"></script><script src="p5.sound.min.js"></script>
     </head>
 <body>
-  <div id="overlay">
+  <div id="overlay" onclick="off()">
     <div id="text">
+      <p id="h1">
       1                   7                    7
-      <br>
+      </p>
+      
+      <p id="p1">
       POST-EVOLUTIONARY NETWORKED ORGANISMS,
 MACHINISTIC FLORA & FAUNA, POLYMERIZED PLANTS, &
 BACINT (BACTERIAL INTELLIGENCE): POSSIBLE IMPOSSIBILITIES.
-      <br>
-      <br>
+</p>
+      <p id="p2">
       X-AXIS: 177.000 YEARS OF SEEMINGLY LINEAR TIME;
       <br>
       Y-AXIS: TIME THROUGH TERRAIN (SEDIMENTS)... BOTH
@@ -61,20 +84,16 @@ AXES INTERSECT GEOLOGICALLY, BIOINFORMATIONALLY
 & SOUND IS MERELY AN ECHO FROM THE EMOTIONAL
 PRESENT; WHILE VERTICAL LINES INDICATE BIG
 RUPTURES IN THE CONTINUUM.
-      <br>  
-      <br>
-      <label for="fname">ENTER A YEAR BETWEEN 0-177.000:</label>
-      <input type="number" id="cell" name="fname"><br><br>
-      <input id="sub-button" type="submit" value="Submit" onclick="off()">
+</p>
+<p id="p3">
+     
       </div>
+    </p> 
   </div>
   <div style="padding:20px">
     <h2></h2>
     <!-- <button onclick="on()">Turn on overlay effect</button> -->
   </div>
-  <script>
-
-    </script>
 </body>
 
 </html>

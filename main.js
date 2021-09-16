@@ -20,68 +20,92 @@ let EJC;
 
 // let input_val = createInput('');
 let encendido;
-let text1 = (`Geometric Organism Sediment
+let text1 = (`--- GEOMETRIC ORGANISM 
 
-‘Can you sing with all the voices of the mountains? You can paint with all the colors of the wind!’
-Geometric mutations are merging with unintended landscapes creating syntheses of existences beyond understanding. This sediment shows authenticity as mutations of sound.
+
+‘CAN YOU SING WITH ALL THE VOICES OF THE MOUNTAINS? YOU CAN PAINT WITH ALL THE COLORS OF THE WIND!’
+
+GEOMETRIC MUTATIONS ARE MERGING WITH UNINTENDED LANDSCAPES CREATING SYNTHESES OF EXISTENCES BEYOND UNDERSTANDING. THIS SEDIMENT SHOWS AUTHENTICITY AS MUTATIONS OF SOUND.
 `);
-let text2 = (`Hallucinatory Specism Layer
+let text2 = (`--- HALLUCINATORY SPECISM 
 
-’This bright millennium, On it's way, Let it come, Someday’
-Emotional vertical fault lines indicate civilizational redirections. Fear. Treachery. Bloodlust! Wholistic ‘natural’ differences signify constructivist hallucinations.
+
+’THIS BRIGHT MILLENNIUM, ON IT'S WAY, LET IT COME, SOMEDAY’
+
+EMOTIONAL VERTICAL FAULT LINES INDICATE CIVILIZATIONAL REDIRECTIONS. FEAR. TREACHERY. BLOODLUST! WHOLISTIC ‘NATURAL’ DIFFERENCES SIGNIFY CONSTRUCTIVIST HALLUCINATIONS.
 `);
-let text3 = (`Machine Flora & Fauna Sediment
+let text3 = (`--- MACHINE FLORA & FAUNA
 
-’You'll see it's true’
-Fusing non-organic logic & synthetic rainbow spectra creating radically pragmatic transhumanist visions: Imagine the unimaginable by seeing the invisible where uncanny scenarios grow flora/fauna/silicon compounds into quantum permafrost.`);
-let text4 = (`Networked Organisms Layer
 
-‘I won't give up, no, I won't give in till I reach the end, and then I'll start again’
-Post-evolutionary multispecies histories & posthumanist narratives fusing GMO’s into new micro &/or macro superstructures.
+’YOU'LL SEE IT'S TRUE’
+
+FUSING NON-ORGANIC LOGIC & SYNTHETIC RAINBOW SPECTRA CREATING RADICALLY PRAGMATIC TRANSHUMANIST VISIONS: IMAGINE THE UNIMAGINABLE BY SEEING THE INVISIBLE WHERE UNCANNY SCENARIOS GROW FLORA/FAUNA/SILICON COMPOUNDS INTO QUANTUM PERMAFROST.`);
+let text4 = (`--- NETWORKED ORGANISMS
+
+
+‘I WON'T GIVE UP, NO, I WON'T GIVE IN TILL I REACH THE END, AND THEN I'LL START AGAIN’
+
+POST-EVOLUTIONARY MULTISPECIES HISTORIES & POSTHUMANIST NARRATIVES FUSING GMO’S INTO NEW MICRO &/OR MACRO SUPERSTRUCTURES.
 `);
-let text5 = (`Non-anthropocentric Sediment
+let text5 = (`--- NON-ANTHROPOCENTRIC SEDIMENT
 
-‘There is no home like the one you’ve got, cause that home belongs to you’ 
-Parts of an ecosystem too slow to adapt to the evolutionary speed & it is not the planet changing fast (climate, extinction..) but humans lack behavioral adaptation speed. `);
-let text6 = (`Non-Endemic Alien Fusion Layer
 
-‘The cold never bothered me anyway!’
-We praise endemic compression, energy for digital plants, geoinsects, hybrid creatures. Organic life on earth proposes utopian future tech taxonomies: Network Infrstrctre, artfcl Satellites, ML/AI, IoT, Dizzney fusing with extraterrestrial ‘artefacts’.`);
-let text7 = (`Highly Vulnerable Bacint Sediment
+‘THERE IS NO HOME LIKE THE ONE YOU’VE GOT, CAUSE THAT HOME BELONGS TO YOU’ 
 
-‘Destined to seek, destined to know’
-Bacteria Intelligence create prototypical multitudes, utopian eternities & hotspots. Bacflora changes genetic makeups, environmental factors & bioinsecticide strains intersect with informational markers through diverse sediments.
+PARTS OF AN ECOSYSTEM TOO SLOW TO ADAPT TO THE EVOLUTIONARY SPEED & IT IS NOT THE PLANET CHANGING FAST (CLIMATE, EXTINCTION..) BUT HUMANS LACK BEHAVIORAL ADAPTATION SPEED. `);
+let text6 = (`--- NON-ENDEMIC ALIEN FUSION
+
+
+‘THE COLD NEVER BOTHERED ME ANYWAY!’
+
+WE PRAISE ENDEMIC COMPRESSION, ENERGY FOR DIGITAL PLANTS, GEOINSECTS, HYBRID CREATURES. ORGANIC LIFE ON EARTH PROPOSES UTOPIAN FUTURE TECH TAXONOMIES: NETWORK INFRSTRCTRE, ARTFCL SATELLITES, ML/AI, IOT, DIZZNEY FUSING WITH EXTRATERRESTRIAL ‘ARTEFACTS’.`);
+let text7 = (`--- HIGHLY VULNERABLE BACINT
+
+
+‘DESTINED TO SEEK, DESTINED TO KNOW’
+
+BACTERIA INTELLIGENCE CREATE PROTOTYPICAL MULTITUDES, UTOPIAN ETERNITIES & HOTSPOTS. BACFLORA CHANGES GENETIC MAKEUPS, ENVIRONMENTAL FACTORS & BIOINSECTICIDE STRAINS INTERSECT WITH INFORMATIONAL MARKERS THROUGH DIVERSE SEDIMENTS.
 `);
-let text8 = (`Non-binary Trans-Pollination Layer
+let text8 = (`--- NON-BINARY TRANS-POLLINATION
 
-‘Que se podría hacer el amor por telepatía, Si te tuviera de frente la mente te la volaría’
-Mutations & unintended non-binary artificial landscapes use software for intervarietal transpollination while productivity perceives ultra-rapid cycles: such high-activity layeres flourish & disappear within miliseconds, creating molecular stability.`);
-let text9 = (`The Impossible Possibility Sediment
 
-  ’Two years, and just like that, my head still takes me back, thought it was done, but I guess it's never really over’
-  Contradictory anarchism breaks random fusion of non-organic logic and synthetic color spectra, primitively utilitarian: Imagine the unimaginable; refuse interpretation.
+‘QUE SE PODRÍA HACER EL AMOR POR TELEPATÍA, SI TE TUVIERA DE FRENTE LA MENTE TE LA VOLARÍA’
+
+MUTATIONS & UNINTENDED NON-BINARY ARTIFICIAL LANDSCAPES USE SOFTWARE FOR INTERVARIETAL TRANSPOLLINATION WHILE PRODUCTIVITY PERCEIVES ULTRA-RAPID CYCLES: SUCH HIGH-ACTIVITY LAYERES FLOURISH & DISAPPEAR WITHIN MILISECONDS, CREATING MOLECULAR STABILITY.`);
+let text9 = (`--- THE IMPOSSIBLE POSSIBILITY SEDIMENT
+
+
+  ’TWO YEARS, AND JUST LIKE THAT, MY HEAD STILL TAKES ME BACK, THOUGHT IT WAS DONE, BUT I GUESS IT'S NEVER REALLY OVER’
+
+  CONTRADICTORY ANARCHISM BREAKS RANDOM FUSION OF NON-ORGANIC LOGIC AND SYNTHETIC COLOR SPECTRA, PRIMITIVELY UTILITARIAN: IMAGINE THE UNIMAGINABLE; REFUSE INTERPRETATION.
   `);
-let text10 = (`Physics & Compression Layer
+let text10 = (`--- PHYSICS & COMPRESSION LAYER
 
-’You're the best thing I never knew I needed’
-A layer interacting above 0,5% & beyond physical logic, taking extreme decisions while theories evolves & verified physics changes & displays agency through compression, the meaty eye of the needle.`);
-let text11 = (`‘Homo Fusus’ hopepunksynesthesia Sediment
 
-‘In the circle of life it's the wheel of fortune, it's the leap of faith, it's the band of hope’
-Homo oeconomicus is an invention of calvinistic Incels since humans can individually adapt to any scenario, & humanity as a whole can blend senses, fuse & unite.`);
+’YOU'RE THE BEST THING I NEVER KNEW I NEEDED’
+
+A LAYER INTERACTING ABOVE 0,5% & BEYOND PHYSICAL LOGIC, TAKING EXTREME DECISIONS WHILE THEORIES EVOLVES & VERIFIED PHYSICS CHANGES & DISPLAYS AGENCY THROUGH COMPRESSION, THE MEATY EYE OF THE NEEDLE.`);
+let text11 = (`--- HOMO FUSUS
+
+--- HOPEPUNKSYNESTHESIA
+
+
+‘IN THE CIRCLE OF LIFE IT'S THE WHEEL OF FORTUNE, IT'S THE LEAP OF FAITH, IT'S THE BAND OF HOPE’
+
+HOMO OECONOMICUS IS AN INVENTION OF CALVINISTIC INCELS SINCE HUMANS CAN INDIVIDUALLY ADAPT TO ANY SCENARIO, & HUMANITY AS A WHOLE CAN BLEND SENSES, FUSE & UNITE.`);
+
 
 
 function setup() {
+  noCursor();
   canvas = createCanvas(windowWidth, windowHeight);
   img = createImage(windowWidth, windowHeight);
   //img = createImage(windowWidth, windowHeight);
 
   img.loadPixels();
   on();
-  seed = random(1200);
-  world = generateWorld(randomInt());
-  extracanvas = createGraphics(windowWidth, windowHeight);
   img = loadImage('assets/blur.png'); // Load the image
+  img1 = loadImage('assets/12.png'); // Load the image
   // img1 = loadImage('assets/1.png'); // Load the image
   // img2 = loadImage('assets/2.png'); // Load the image
   // img3 = loadImage('assets/3.png'); // Load the image
@@ -93,6 +117,7 @@ function setup() {
   // img1 = loadImage('assets/12.png'); // Load the image
   encendido = true;
   randoImg = random(randoImgArray);
+
 
 
 
@@ -137,21 +162,30 @@ function draw() {
 
 
   let c = get(mouseX, mouseY);
+  // print(c);
   let hueValue = floor(hue(c));
   let saturationValue = saturation(c);
   let lightnessValue = lightness(c);
   let X = mouseX;
   let Y = mouseY;
 
+  if (!KUT.isPlaying()) {
+    KUT.setVolume(0.3, 1);
+    KUT.play();
+  }
+
+
 
   if (!encendido) {
-    image(randoImg, 0, 0, img.width, img.height);
+    // image(randoImg, 0, 0, img.width, img.height);
+    image(img1, 0, 0, img.width, img.height);
     // img.filter(BLUR);
     // img.filter(BLUR, 0);
 
     //1
 
-    if (hueValue >= 1 && hueValue <= 30 && mousePressed) {
+
+    if (mouseY >= 100 && mouseY <= 150) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -159,12 +193,13 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 510, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 510, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
+      // text1.toUpperCase();
       text(text1, X, Y, 500, 500);
       if (!VWC.isPlaying()) {
         VWC.setVolume(0.3, 1);
@@ -178,7 +213,7 @@ function draw() {
 
     //2
 
-    if (hueValue >= 31 && hueValue <= 60) {
+    if (mouseY >= 151 && mouseY <= 200) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -186,11 +221,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text2, X, Y, 500, 500);
       if (!DSS.isPlaying()) {
@@ -205,7 +240,7 @@ function draw() {
 
     //3
 
-    if (hueValue >= 61 && hueValue <= 90) {
+    if (mouseY >= 201 && mouseY <= 250) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -213,11 +248,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text3, X, Y, 500, 500);
       if (!JBI.isPlaying()) {
@@ -232,7 +267,7 @@ function draw() {
 
     //4
 
-    if (hueValue >= 91 && hueValue <= 120) {
+    if (mouseY >= 251 && mouseY <= 300) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -240,11 +275,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text4, X, Y, 500, 500);
       if (!STE.isPlaying()) {
@@ -259,7 +294,7 @@ function draw() {
 
     //5
 
-    if (hueValue >= 121 && hueValue <= 150) {
+    if (mouseY >= 301 && mouseY <= 350) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -267,11 +302,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text5, X, Y, 500, 500);
       if (!BAM.isPlaying()) {
@@ -286,7 +321,7 @@ function draw() {
 
     //6
 
-    if (hueValue >= 151 && hueValue <= 180) {
+    if (mouseY >= 351 && mouseY <= 400) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -294,11 +329,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text6, X, Y, 500, 500);
       if (!IML.isPlaying()) {
@@ -313,7 +348,7 @@ function draw() {
 
     //7
 
-    if (hueValue >= 181 && hueValue <= 210) {
+    if (mouseY >= 401 && mouseY <= 450) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -321,11 +356,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text7, X, Y, 500, 500);
       if (!AMW.isPlaying()) {
@@ -341,7 +376,7 @@ function draw() {
     //8
 
 
-    if (hueValue >= 211 && hueValue <= 240) {
+    if (mouseY >= 451 && mouseY <= 500) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -349,11 +384,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text8, X, Y, 500, 500);
       if (!KUT.isPlaying()) {
@@ -368,7 +403,7 @@ function draw() {
 
     //9
 
-    if (hueValue >= 241 && hueValue <= 270) {
+    if (mouseY >= 501 && mouseY <= 550) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -376,11 +411,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text9, X, Y, 500, 500);
       if (!KPN.isPlaying()) {
@@ -395,7 +430,7 @@ function draw() {
 
     //10
 
-    if (hueValue >= 271 && hueValue <= 300) {
+    if (mouseY >= 551 && mouseY <= 600) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
@@ -403,11 +438,11 @@ function draw() {
         Y = mouseY - 150;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text10, X, Y, 500, 500);
       if (!NYN.isPlaying()) {
@@ -422,19 +457,19 @@ function draw() {
 
     //11
 
-    if (hueValue >= 301 && hueValue <= 360) {
+    if (mouseY >= 601) {
       if (mouseX > windowWidth / 2) {
         X = mouseX - 500;
       }
       if (mouseY > windowHeight / 2) {
-        Y = mouseY - 150;
+        Y = mouseY - 200;
       }
       // let bbox = textBounds(text1, mouseX, mouseY, 12);
-      noStroke();
-      fill('rgba(117, 178, 168, 0.5)');
-      rect(X - 10, Y - 10, 500, 230);
+      // noStroke();
+      // fill('rgba(117, 178, 168, 0.5)');
+      // rect(X - 10, Y - 10, 500, 230);
       textSize(20);
-      fill(0);
+      fill(233, 199, 6);
       textFont(myFont);
       text(text11, X, Y, 500, 500);
       if (!EJC.isPlaying()) {
@@ -457,7 +492,9 @@ function draw() {
 
 
 
-  print(hueValue);
+  // print(lightnessValue);
+  // print(saturationValue);
+  print(mouseY);
   // image(extracanvas, 0, 0, windowWidth, windowHeight);
 
   // if (frameCount === 15) {
@@ -628,7 +665,7 @@ function drawWorld(world) {
         col = [0, 0, 123, 0];
       } else {
         rSet(world[x + y * windowWidth])
-        col = [random(map(y, 0, worldHeight, 0, 255)), random(0, 100), random(0, 25), 255]
+        col = [random(0, 255), random(0, 255), random(0, 255), 255]
         // col = [random(map(y, 0, windowHeight, 0, 255)), random(0, 100), random(0, 25), 255]
       }
       img.pixels[(x + y * windowWidth) * 4] = floor(col[0]);
