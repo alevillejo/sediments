@@ -154,8 +154,8 @@ function off() {
 }
 
 function draw() {
-  background(0, 0, 102);
-  image(img, 0, 0, img.width, img.height);
+  background(0);
+  // image(img, 0, 0, img.width, img.height);
 
   // for (x = 0; x <= 3; x++) {
   //   img.filter(BLUR, x);
