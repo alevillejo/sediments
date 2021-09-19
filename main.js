@@ -1,5 +1,5 @@
 let canvas, img, seed, world, extracanvas;
-
+var renderer;
 let env;
 // p5.disableFriendlyErrors = true;
 // const windowWidth = 1200;
@@ -98,14 +98,16 @@ HOMO OECONOMICUS IS AN INVENTION OF CALVINISTIC INCELS SINCE HUMANS CAN INDIVIDU
 
 function setup() {
   noCursor();
-  canvas = createCanvas(windowWidth, windowHeight);
+  // fullscreen();  
+  renderer = createCanvas(windowWidth, windowHeight);
+  renderer.canvas.style.display = 'block';
   img = createImage(windowWidth, windowHeight);
   //img = createImage(windowWidth, windowHeight);
 
   img.loadPixels();
   on();
   img = loadImage('assets/blur.png'); // Load the image
-  img1 = loadImage('assets/12.png'); // Load the image
+  img1 = loadImage('assets/1.png'); // Load the image
   // img1 = loadImage('assets/1.png'); // Load the image
   // img2 = loadImage('assets/2.png'); // Load the image
   // img3 = loadImage('assets/3.png'); // Load the image
@@ -113,7 +115,7 @@ function setup() {
   // img5 = loadImage('assets/5.png'); // Load the image
   // img6 = loadImage('assets/6.png'); // Load the image
   // img7 = loadImage('assets/12.png'); // Load the image
-  randoImgArray = [loadImage('assets/1.png'), loadImage('assets/2.png'), loadImage('assets/3.png'), loadImage('assets/4.png'), loadImage('assets/5.png'), loadImage('assets/6.png'), loadImage('assets/12.png')];
+  randoImgArray = [loadImage('assets/13.png'), loadImage('assets/2.png'), loadImage('assets/3.png'), loadImage('assets/4.png'), loadImage('assets/5.png'), loadImage('assets/6.png'), loadImage('assets/12.png')];
   // img1 = loadImage('assets/12.png'); // Load the image
   encendido = true;
   randoImg = random(randoImgArray);
@@ -152,7 +154,7 @@ function off() {
 }
 
 function draw() {
-  background(255);
+  background(0, 0, 102);
   image(img, 0, 0, img.width, img.height);
 
   // for (x = 0; x <= 3; x++) {
@@ -169,16 +171,16 @@ function draw() {
   let X = mouseX;
   let Y = mouseY;
 
-  if (!KUT.isPlaying()) {
-    KUT.setVolume(0.3, 1);
-    KUT.play();
+  if (!EJC.isPlaying()) {
+    EJC.setVolume(0.3, 1);
+    EJC.play();
   }
 
 
 
   if (!encendido) {
     // image(randoImg, 0, 0, img.width, img.height);
-    image(img1, 0, 0, img.width, img.height);
+    image(randoImg, 0, 0, img.width - 50, img.height - 50);
     // img.filter(BLUR);
     // img.filter(BLUR, 0);
 

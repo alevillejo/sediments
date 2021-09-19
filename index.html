@@ -1,5 +1,13 @@
 <html>
   <style>
+    html, body {
+	margin: 0;
+	padding: 0;
+  border: none;
+  background: black;
+  overflow: hidden; /* Hide scrollbars */
+}
+
     #overlay {
       position: fixed;
       display: none;
@@ -30,7 +38,8 @@
     }
 
     #h1{
-      font-size: 90px;
+      font-size: 100px;
+      font-weight: bold;
     }
 
     #p1{
@@ -54,7 +63,15 @@
     }
 
     #sub-button{
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0);
+      color: rgb(233, 199, 6);
+      border: 'none';
+      padding: '3px 32px';
+      margin: 8px 2px;
+      cursor: pointer;
+    }
+    #myBtn{
+      background-color: rgba(255, 255, 255, 0);
       border: 'none';
       padding: '3px 32px';
       margin: 8px 2px;
@@ -63,9 +80,10 @@
   </style>
     <head>
     <script src="main.js" type="text/javascript"></script><script src="math.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" type="text/javascript"></script><script src="p5.dom.min.js"></script><script src="p5.sound.min.js"></script>
+
     </head>
 <body>
-  <div id="overlay" onclick="off()">
+  <div id="overlay">
     <div id="text">
       <p id="h1">
       1                   7                    7
@@ -84,15 +102,24 @@ AXES INTERSECT GEOLOGICALLY, BIOINFORMATIONALLY
 & SOUND IS MERELY AN ECHO FROM THE EMOTIONAL
 PRESENT; WHILE VERTICAL LINES INDICATE BIG
 RUPTURES IN THE CONTINUUM.
+<input id="sub-button" type="number" placeholder="Year 0-177.000">
+<button id="myBtn" onclick="off()"></button>
 </p>
+
+<script>
+  var input = document.getElementById("sub-button");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("myBtn").click();
+    }
+  });
+  </script>
+
 <p id="p3">
      
       </div>
     </p> 
-  </div>
-  <div style="padding:20px">
-    <h2></h2>
-    <!-- <button onclick="on()">Turn on overlay effect</button> -->
   </div>
 </body>
 
