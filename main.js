@@ -115,7 +115,7 @@ function setup() {
   // img5 = loadImage('assets/5.png'); // Load the image
   // img6 = loadImage('assets/6.png'); // Load the image
   // img7 = loadImage('assets/12.png'); // Load the image
-  randoImgArray = [loadImage('assets/13.png'), loadImage('assets/2.png'), loadImage('assets/3.png'), loadImage('assets/4.png'), loadImage('assets/5.png'), loadImage('assets/6.png'), loadImage('assets/12.png')];
+  randoImgArray = [loadImage('assets/1.png'), loadImage('assets/2.png'), loadImage('assets/3.png'), loadImage('assets/4.png'), loadImage('assets/5.png'), loadImage('assets/6.png'), loadImage('assets/7.png'), loadImage('assets/8.png'), loadImage('assets/9.png'), loadImage('assets/10.png'), loadImage('assets/11.png')];
   // img1 = loadImage('assets/12.png'); // Load the image
   encendido = true;
   randoImg = random(randoImgArray);
@@ -139,8 +139,6 @@ function preload() {
   KPN = loadSound('assets/KPN.mp3');
   NYN = loadSound('assets/NYN.mp3');
   EJC = loadSound('assets/EJC.mp3');
-
-
 
 }
 
